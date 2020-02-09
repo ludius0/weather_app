@@ -7,7 +7,7 @@ root = Tk()
 root.title("Weather app")
 root.geometry("450x150")
 
-# Api key to make it all work
+# Api key to make it all work --> Rewrite it with your API key
 api_key = "aa430d850560ef2e928eb101e69475bb"
 
 
