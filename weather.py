@@ -76,7 +76,7 @@ find_data_button.grid(row=0, column=1, ipadx=20, sticky=N+E+S+W)
 report = Label(root, text="")
 report.grid(row=1, column=0)
 comment = Label(root, text="")
-report.grid(row=2, column=0)
+comment.grid(row=2, column=0)
 
 
 ###Loop
