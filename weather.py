@@ -20,7 +20,7 @@ def weather():
     try:
 # Call data from openweather
         i = city.get()
-        api_call = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={i}&appid={api_key}")
+        api_call = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q= + i + "&appid=" + api_key")
         api = json.loads(api_call.content)
         
 # "Decode" needed data (and match kelvin to celsius and fahrenheit)
