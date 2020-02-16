@@ -26,8 +26,8 @@ def weather():
 # "Decode" needed data (and match kelvin to celsius and fahrenheit)
         clouds = api["weather"][0]["description"]
         temp_k = api["main"]["temp"]
-        temp_f = int(9/5 * (temp_k - 273) + 32)
-        temp_c = int(temp_k - 273.15)
+        temp_f = round(9/5 * (temp_k - 273) + 32)
+        temp_c = round(temp_k - 273.15)
 
 # Colors and comments
         if temp_c <= -20:
